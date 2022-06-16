@@ -16,12 +16,12 @@ padding-left: 10px;
 line-height: 18px;
 color: #000000;
 font-weight: 400;
-font-size: 15px;
+font-size: 1rem;
 margin: 0px;
 }
 h1{
     position: absolute;
-    font-size: 40px;
+    font-size: 2rem;
     background-color: #00669F;
     width: 100%;
     height: 101px;
@@ -33,28 +33,30 @@ h1{
     color: #000000;
     margin: 0px;
 }
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 main{
-    display: inline-block;
-    position: absolute;
+    display: flex;
     width: 100%;
-    height: 750px;
-    top: 150px;
-    text-align: center;
+    justify-content: space-around;
 }
 
 .megusta{
     position: absolute;
     width: 30px;
     height: 27;
-    left:5px;
+    left:5px;s
     top: 5px;
 
 }
 .circulo{
     border-radius: 50%;
     position: absolute;
-    width: 120px;
-    height: 118px;
     left: 90px;
     top: 125px;
 }
@@ -68,13 +70,13 @@ color:#ffffff;
 background-color: #00669F;
 }
 .card1{
-    position: relative;
-    display: inline-block;
     width: 300px;
     height: 570px;
     top: 150px;
+    border-radius: 1em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-left: 35px; 
+    margin-top: 292px;
     text-align: center; 
     background-color: #F3F3F3;
 }
@@ -84,12 +86,22 @@ background-color: #00669F;
 
 }
 footer{
-    position: absolute;
-    top:1024px;
     width: 100%;
-    left:0px;
     height: 71px;
     color: #ffffff;
     background-color: #00669F;
     padding: 10px 10px 10px 10px;
+    margin-top: 70px;
+
+}
+@media(max-width: 1012px){
+    .card1{
+        margin-top: 25px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+       }
+
+    
 }
