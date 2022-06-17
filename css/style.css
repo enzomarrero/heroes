@@ -44,9 +44,11 @@ main {
   border-radius: 50%;
 
 }
-button {
-  width: 128px;
-  height: 48px;
+.button {
+  border: black;
+  border-style: double;
+  width: 100px;
+  height: 40px;
   color: #ffffff;
   text-decoration: none;
   background-color: #00669f;
