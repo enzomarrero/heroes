@@ -1,107 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100;1,700&display=swap');
-*{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,700;1,100;1,700&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+header {
+  display: block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.top {
+  position: relative;
+  background-color: aqua;
+  line-height: 50px;
+  width: 100%;
+  margin: 0px;
 }
 
-.top{
-position: absolute;
-width: 100%;
-height: 38px;
-left: 0px;
-top: 0px;
-background: #1CD1B0;
-padding-top: 10px;
-padding-left: 10px;
-line-height: 18px;
-color: #000000;
-font-weight: 400;
-font-size: 1rem;
-margin: 0px;
-}
-h1{
-    position: absolute;
-    font-size: 2rem;
-    background-color: #00669F;
-    width: 100%;
-    height: 101px;
-    font-weight: 600;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-    top: 35px;
-    left:0px;
-    padding: 28px 903px 28px 28px;
-    color: #000000;
-    margin: 0px;
+h1 {
+  position:relative;
+  background-color: #00669f;
+  color: #f3f3f3;
+  line-height: 96px;
+  padding-left: 25px;
+  width: 100%;
+  margin: 0px;
 }
 
-body{
-    display:flex;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.megusta {
+}
+.circulo {
+  border-radius: 50%;
+
+}
+button {
+  width: 128px;
+  height: 48px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #00669f;
+}
+.card1 {
+  width: 300px;
+  height: 570px;
+  border-radius: 1em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 35px;
+  justify-content: flex-start;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+.encuadre {
+  padding: 24px;
+  text-align: justify;
+}
+footer {
+  width: 100%;
+  height: 71px;
+  color: #ffffff;
+  background-color: #00669f;
+  padding: 10px 10px 10px 10px;
+  margin-top: 70px;
+}
+@media (max-width: 1012px) {
+  .card1 {
+    margin-top: 25px;
+  }
+  main {
     flex-direction: column;
-    justify-content: space-between;
-}
-
-main{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.megusta{
-    position: absolute;
-    width: 30px;
-    height: 27;
-    left:5px;s
-    top: 5px;
-
-}
-.circulo{
-    border-radius: 50%;
-    position: absolute;
-    left: 90px;
-    top: 125px;
-}
-button{
-position: absolute;
-width: 128px;
-height: 48px;
-left: 90px;
-top: 500px;
-color:#ffffff;
-background-color: #00669F;
-}
-.card1{
-    width: 300px;
-    height: 570px;
-    top: 150px;
-    border-radius: 1em;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 35px; 
-    margin-top: 292px;
-    text-align: center; 
-    background-color: #F3F3F3;
-}
-
-.encuadre{
-    padding: 15px;
-
-}
-footer{
-    width: 100%;
-    height: 71px;
-    color: #ffffff;
-    background-color: #00669F;
-    padding: 10px 10px 10px 10px;
-    margin-top: 70px;
-
-}
-@media(max-width: 1012px){
-    .card1{
-        margin-top: 25px;
-    }
-    main{
-        flex-direction: column;
-        align-items: center;
-       }
-
-    
+    align-items: center;
+  }
 }
