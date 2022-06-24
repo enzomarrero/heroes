@@ -6,15 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/UniversoDC.png">
     <title>HEROES</title>
 </head>
 
 <body>
     <header>
         <P class="top">Descuentos 20%</P>
-        <h1>Heroes</h1>
-    </header>
+        <div>
+            <h1>Heroes</h1>
+        </div>
 
+    </header>
+    <form action="#">
+        <fieldset>
+            <legend>
+                <div>
+                    <label for="user">Usuario</label>
+                    <input type="text" name="username" required id="user" />
+                </div>
+                <div>
+                    <label for="user">Contraseña <input type="password" name="password" minlength="8"
+                            maxlength="10"></label>
+                </div>
+                <div>
+                    <label for="user">E-mail<input type="email" name="email"></label>
+                </div>
+                <div>
+                    <label for="user">
+                        <input type="checkbox" name="condiciones" value="Acepto"> Acepto los términos y
+                        condiciones</label>
+                    <button type="submit">Ingresar</button>
+                    <button type="reset">Cancelar</button>
+                </div>
+            </legend>
+        </fieldset>
+    </form>
     <main>
         <div class="card1">
             <img src="img/fondobatman.png" alt="fondo">
@@ -54,12 +81,12 @@
             <img class="megusta" src="img/corazon.png" alt="Me Gusta">
             <H2>MUJER MARAVILLA</H2>
             <p class="encuadre">Es una superheroína creada por William Moulton Marston para la editorial DC Comics. Es
-            una princesa guerrera de las Amazonas, pueblo ficticio basado en el de las amazonas de la mitología
-            griega. En su tierra natal es conocida como la princesa Diana de Temiscira pero fuera de esta utiliza la
-            identidad secreta de Diana Prince. </p>
+                una princesa guerrera de las Amazonas, pueblo ficticio basado en el de las amazonas de la mitología
+                griega. En su tierra natal es conocida como la princesa Diana de Temiscira pero fuera de esta utiliza la
+                identidad secreta de Diana Prince. </p>
             <a class="button" href="https://www.dccomics.com/characters/wonder-woman" target="_blank">Ver más</a>
         </div>
-
+        <a class="agregar" href="views/agregar.html" target="_blanc"><img src="img/button_agr.png"></a>
 
     </main>
     <footer>

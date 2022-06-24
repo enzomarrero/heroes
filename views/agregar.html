@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleform.css">
+    <title>Agregar Heroes</title>
+</head>
+
+<body>
+    <header>
+        <P class="top">Descuentos 20%</P>
+        <div>
+            <h1>Heroes</h1>
+        </div>
+    </header>
+
+    <main>   
+
+    
+
+    <fieldset>
+        <h2>Agregá tu personaje</h2>
+        <p>Completa este formulario para agregar tu personaje</p>
+        <form action="#" method="post">
+        <!--Nombre-->
+        <section>
+        <div>
+            <label for="name">*Nombre<input type="text" name="user_name" required></label>
+        
+        <!--Seleccionar especie-->
+        
+            <label for="name">*Especie
+                <select name="especie" required>
+                    <option value="hm">Homo Magi</option>
+                    <option value="at">Atlantes</option>
+                    <option value="am">Amazonas</option>
+                    <option value="ma">Marcianos</option>
+                    <option value="ta">Tamaraneanos</option>
+                    <option value="el">Elementals</option>
+                    <option value="kr">Kryptonianos</option>
+                    <option value="cz">Czarnians</option>
+                    <option value="new">New Gods</option>
+                    <option value="imps">Imps</option>
+                    <option value="mal">Maltusianos</option>
+                    <option value="mo">Monitores</option>
+                    <option value="en">Endless</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="date">Fecha:</label>
+            <input type="date" name="date">
+        </div>
+        <div>
+            <label>Agregar foto</label>
+            <input type="file" name="avatar" accept=".jpg, .png" multiple>
+        </div>
+
+        <div>
+            <label name="poderes">Poderes:
+                <input type="checkbox" value="fly" name="poderes">Volar
+                <input type="checkbox" value="Inteligente" name="poderes">Superinteligencia
+                <input type="checkbox" value="laser" name="poderes">Vista de rayos laser
+                <input type="checkbox" value="billetera" name="poderes">Billetera gorda
+            </label>
+        </div>
+
+        <div>
+            <label name="tipo">Tipo de Personaje:
+                <input type="radio" value="heroes" name="tipo">Hero | Heroina
+                <input type="radio" value="villanos" name="tipo">Villano | Villana
+            </label>
+        </div>
+
+
+        <div>
+            <label for="msg">Descripcion:</label>
+            <textarea name="user_message"></textarea>
+        </div>
+    </form>
+    </form>
+</fieldset>
+</section>
+</main>
+
+
+
+
+
+
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <a href="https://github.com/enzomarrero">GitHub</a>
+    </footer>
+
+</body>
+
+</html>
